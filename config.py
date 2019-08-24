@@ -9,14 +9,17 @@ config file
 """
 
 SCREEN = {
-    "TITLE" : "The Menu Game - WIP",
-    "WIDTH" : 800,
-    "HEIGHT" : 1000
+    "TITLE": "The Menu Game - WIP",
+    "WIDTH": 350,
+    "HEIGHT": 200
 
-    }
+}
 
 PS_DEFAULTS = {
-        "SIZE" : 8,
-        "COLOR_MAP" : ["White","Black"]
+    "HEIGHT": 801,
+    "SIZE": 9,
+    "COLOR_MAP": ["White", "Black", "Red", "Green", "Yellow"]
 
-        }
+}
+# This adjusts the height so it's a factorable by size
+PS_DEFAULTS["HEIGHT"] -= PS_DEFAULTS["HEIGHT"] % PS_DEFAULTS["SIZE"]
