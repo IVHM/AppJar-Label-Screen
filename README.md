@@ -1,4 +1,4 @@
-# Menu-Game -WIP-
+# AppJar-Label-Screen  or how i learned to love the bodge
 A completely useless pixel screen built around the appJar library. It's built utilizing a 2D array to initialize background color values in a square array of  appJar's label objects. With added methods for use in a variety of equally useless projects. 
 
 AppJar is a powerful library that allows non-UI designers a chance to create a piece of python code that isn't just a bunch of incomprehensible terminal inputs and outputs that look like an Amiga-500 was having a seizure over it's alphabet soup. With such a powerful and useful library at your disposal one must conclude that it should be put to use doing, what can only be described as "a waste of your week" and "a stain upon open source developers everywhere". So here goes a feature extension to appJar, that literally nobody asked for and several people begged to stop.  
