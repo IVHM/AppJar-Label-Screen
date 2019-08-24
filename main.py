@@ -45,12 +45,6 @@ def maze_game():
 
     pc = Agent(7, 6, MAPS[0], 2)
 
-    map_screen.create()
-    app.hide()
-    map_screen.load_pxl_map(MAPS[0])
-    map_screen.update_pxl(pc.pos[0], pc.pos[1], pc.color)
-    create_mov_controls()
-
     def create_mov_controls():
         app.startSubWindow("Controls")
         print("COntrols window started")
@@ -89,6 +83,14 @@ def maze_game():
                         pc.last_ground)
         print("loaded new position")
 
+
+    map_screen.create()
+    app.hide()
+    map_screen.load_pxl_map(MAPS[0])
+    map_screen.update_pxl(pc.pos[0], pc.pos[1], pc.color)
+    create_mov_controls()
+
+    
 
 def disco_floor(name):
     print("Disco floor")
