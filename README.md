@@ -35,38 +35,39 @@ See code examples for less hand wavey explanation.
 -------------------------------------------------
 
 
-#### Class Methods
+### Class Methods
 Without these this thing would be even more unusable than it already is
 
-##### self.create()
+#### self.create()
 Initializes all the labels for appJar to use, if you don't call it before any other method your code will not work and you will look more foolish than you did when you opened up this repository in the first place.
 
 
-##### self.load_pxl_map(image_data)
+#### self.load_pxl_map(image_data)
 Takes in a 2d array of values and loads it into the classes internal pixel map. If this is not the exact dimensions you specified when initializing the class it will not work, and you will look silly.
 - **image_data**- This has got to be a list of integers, since it's referencing the values in your self.color_map list
 
 
-##### self.mov_pxl(pos, last_pos, new_col, org_col)
+#### self.mov_pxl(pos, last_pos, new_col, org_col)
 Takes a pixel that used to be over there and moves it here. Or just changes the values of two specific pixels if you want to be pedantic about it.
 - **pos & last_pos** - An array containing the x and y coords of the labels you want to change
 - **new_col & org_col** - The location in your color_map variable you want to change the label's color to, or in other words, an integer
 
 
-##### self.test_screen() 
+#### self.test_screen() 
 Just generates a random image on your screen to make sure everything is working.
 To be honest this is what it will look like if everything is not working too, so good luck.
 
 
-##### self.update_pxl(x, y, color)
+#### self.update_pxl(x, y, color)
 Updates the value of a single pixel. Now that I'm thinking about it you could basically just call this twice instead of using the mov_pxl method but at this point, does it really matter? Does anything matter? Is meaning and truth inherent in our world or are we all just floating sacks of purposeless atoms, bouncing around in a brownian soup of chaos till we reach our final blissful entropic dissipation. Also the color value is still an integer in case you were wondering.
 
 
 
-##### self.diag(note)
+#### self.diag(note)
 Prints out the current and last pxl_map so you can figure out what part of your overactive reptilian brain got a little slap happy on the keyboard. 
 - **note**- A string of text helping you find some sort of order in the chaotic dumpster fire we call our lives.
 
+-----------------------------------------------
 
 ## Code Example
  
