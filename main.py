@@ -90,7 +90,7 @@ def maze_game():
     map_screen.update_pxl(pc.pos[0], pc.pos[1], pc.color)
     create_mov_controls()
 
-    
+dancing = 0   
 
 def disco_floor(name):
     print("Disco floor")
@@ -99,6 +99,7 @@ def disco_floor(name):
         global dancing
         dancing = False
 
+    refresh_rates = []
     app.startSubWindow("disco control")
     app.addButton("Oh stop", stahp_it)
     app.stopSubWindow()
@@ -120,14 +121,9 @@ def disco_floor(name):
             tiles[x].append(randint(0, len(disco_col) - 1))
     
     
-    dancing = 0
-    refresh_rates = []
-    
-
-
     def draw_floor():    
         global dancing
-        if dancing < 30:
+        if dancing <= 30:
             s = time.time()  # Start timer
             for x in range(9):
                 for y in range(9):
