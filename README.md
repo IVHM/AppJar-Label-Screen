@@ -13,6 +13,12 @@ AppJar is a powerful library that allows non-UI designers a chance to create a p
 - **Demos**: Dude, do you like mazes!? NO?..Oh uh, well nevermind. 
 - **Extra Features**: The satisfaction of knowing where the bottom of the barrel is
 
+### Screenshots
+Because apparently some of your are masochists out there.
+
+[The maze game, i'm sorry](aMAZEing.png)
+
+[Disco floor refresh tester](Groovey_baby.png)
 
 -------------------------------------------------
 
